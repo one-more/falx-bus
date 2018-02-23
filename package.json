@@ -1,0 +1,52 @@
+{
+  "name": "falx-bus",
+  "version": "1.0.0",
+  "description": "bus to modify state on server and avoid tedious REST endpoints",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "webpack --mode production --display-modules",
+    "build:publish": "npm run test && npm run build && npm publish",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/one-more/falx-bus.git"
+  },
+  "keywords": [
+    "falx",
+    "flux"
+  ],
+  "author": "one-more",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/one-more/falx-bus/issues"
+  },
+  "homepage": "https://github.com/one-more/falx-bus#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "falx": "^1.1.4",
+    "flow-bin": "^0.66.0",
+    "webpack": "^4.0.0-beta.1",
+    "webpack-cli": "^2.0.4"
+  },
+  "peerDependencies": {
+    "falx": "^1.1.0"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "flow"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-decorators-legacy"
+    ]
+  }
+}
