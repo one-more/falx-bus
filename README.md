@@ -2,6 +2,8 @@
 modify state on server avoiding tedious 
 REST endpoints.
 
+designed to be used with [falx](https://github.com/one-more/falx)
+
 ## installation
 ````
 npm i -S falx-bus
