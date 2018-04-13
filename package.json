@@ -1,6 +1,6 @@
 {
   "name": "falx-bus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "bus to modify state on server and avoid tedious REST endpoints",
   "main": "dist/main.js",
   "scripts": {
